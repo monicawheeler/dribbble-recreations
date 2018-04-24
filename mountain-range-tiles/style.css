@@ -1,0 +1,70 @@
+:root {
+    --serif: "Playfair Display", serif;
+    --sans-serif: 'PT Sans', sans-serif;
+    
+    --white: #fff;
+    
+    --blue-gray: #dde0e7;
+    --gray: #77818a;
+    --light-gray: #f1f2f5;
+    
+    --deep-blue: #0a2b3a;
+
+    --transition-timing: var(--transition-timing);
+}
+
+body {
+    margin: 50px 0;
+    font-family: var(--sans-serif);
+    background-color: var(--blue-gray);
+    color: var(--gray);
+}
+
+.card-heading {
+    margin-bottom: 20px;
+    color: #0a2b3a;
+    font-family: var(--serif);
+    font-size: 55px;
+    line-height: 1;    
+}
+
+.card-subheading {
+    padding-left: 5px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.photo-card {
+    width: 420px;
+    padding-top: 50px;
+    margin: 0 auto;
+    box-shadow: 30px 30px 70px 30px rgba(0,0,0,0.2);
+    background-image: url(https://i.imgur.com/nwAZaWI.jpg);
+    background-position: center;
+    transform: scale(1);
+    transition: all var(--transition-timing) ease;
+}
+
+.photo-card:hover {
+    transform: scale(1.01);
+}
+
+.photo-card__header {
+    padding: 0 40px 470px 45px;
+}
+
+.photo-card__footer {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.photo-card__footer__link {
+    padding: 28px 20px;;
+    display: block;
+    color: var(--deep-blue);
+    letter-spacing: 3px;
+    background-color: var(--white);
+    text-decoration: none;
+    transition: all var(--transition-timing) ease;
+}
