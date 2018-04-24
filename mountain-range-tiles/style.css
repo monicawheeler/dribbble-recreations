@@ -10,7 +10,7 @@
     
     --deep-blue: #0a2b3a;
 
-    --transition-timing: var(--transition-timing);
+    --transition-duration: 300ms;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
     background-image: url(https://i.imgur.com/nwAZaWI.jpg);
     background-position: center;
     transform: scale(1);
-    transition: all var(--transition-timing) ease;
+    transition: all var(--transition-duration) ease;
 }
 
 .photo-card:hover {
@@ -66,5 +66,4 @@ body {
     letter-spacing: 3px;
     background-color: var(--white);
     text-decoration: none;
-    transition: all var(--transition-timing) ease;
 }
